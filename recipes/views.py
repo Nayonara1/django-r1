@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 
 def home(request):
- return HttpResponse('Home.html')
+ return render (request, 'recipes/home.html')
 
 def  sobre(request):
  return HttpResponse('<h1>Sobre-  Django</h1>')
